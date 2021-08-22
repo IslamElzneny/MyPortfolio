@@ -1,0 +1,634 @@
+:root
+{
+    --background-body:#f5f5f5;
+    --color-body:rgba(17, 17, 17, 0.932);
+    --color-base:#80b435;
+    --background-footer:#252932;
+
+}
+html,body{margin: 0; width: 100%;  height: 100%;}
+#body
+{
+    color: var(--color-body);
+    padding: 0px;
+    margin: 0px;
+    background-color:var(--background-body);
+    font-family: Arial, Helvetica, sans-serif; /*'Playfair Display', serif*/
+}
+.margin-top{
+    margin-top: 50px;
+}
+.navigation{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 5px;
+    right: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 3px;
+    color: #ffff;
+    background-color: #ed6663;
+}
+.navigation:hover{
+    cursor: pointer;
+    background-color:#2ecc71;
+}
+.navigation .fa-customize
+{
+    color: #ffff;
+    margin: 0 auto;
+}
+/* ==================
+   Start header
+=====================*/
+.header_row{
+    display: flex;
+    justify-content: center;
+}
+.header
+{
+    position:fixed;
+    width: 90% !important;
+    height: 75px;
+    z-index: 99999999999;
+    background-color: #ffffff;
+    transition: 1s;
+}
+.nav-item
+{
+    width: 100%;
+}
+.nav-item ul
+{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.nav-item ul li
+{
+    margin: 0 25px;
+    margin-top: 20px;
+}
+.nav-item ul #owner
+{
+    position: absolute;
+    left: 70px;
+    font-size: 25px;
+    margin-top: 15px;
+}
+#owner span
+{
+    font-size: 30px;
+    font-family: cursive;
+    color: #80b435
+}
+.nav-item ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.nav-item ul li a:hover
+{
+     color: var(--color-base);
+}
+.nav-item ul li .fa-moon
+{
+    cursor: pointer;
+    margin-top: 5px;
+}
+.nav-item ul li .fa-sun
+{
+    display: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.full_header{
+    position:fixed;
+    width: 100% !important;
+    height: 75px;
+    z-index: 99999999999;
+    background-color: #ffffff;
+    transition: 5s;
+}
+/* ==================
+   End header
+=====================*/
+
+/* ==================
+   Start Home Page
+=====================*/
+
+.carousel-caption {
+    background-color: #5b6270;
+    color: #80b435;
+    border-top-left-radius:50px;
+    border-bottom-right-radius: 50px;
+}
+/* ==================
+   End Home Page
+=====================*/
+
+/* ==================
+   start About Page
+=====================*/
+
+.about
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.about div
+{
+    margin-top:35px ;
+}
+.about .header-about h2
+{
+    font-size: 30px;
+    font-family: 'Playfair Display';
+    opacity: .8;
+}
+.about .header-about span
+{
+    font-size: 15px;
+    font-family: cursive;
+    text-align: center;
+    margin-left: 6px;
+}
+.about .contain-about
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.about .contain-about .image-about img
+{
+    float: right;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-right: 40px;
+    width: 320px;
+    height: 270px
+} 
+.about .contain-about .image-about , .discraption-about
+{
+     width: 30%;
+}
+.about .contain-about .discraption-about p
+{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    word-spacing: 2.2px;
+}
+
+.about .contain-about .discraption-about .counters
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about .contain-about .discraption-about .counters div p
+{
+    padding: 0;
+    margin: 0;
+}
+.about .contain-about .discraption-about button{margin-top: 15px;}
+.about .contain-about .discraption-about button a
+{
+   color: white;
+   text-decoration: none;
+}
+
+
+/* ==================
+   End About Page
+=====================*/
+
+/* ==================
+   Start Skills Page
+=====================*/
+.skills
+{
+     width: 100%; 
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 110px !important;
+     margin-bottom: 90px !important;
+}
+.skills .section_title
+{
+    font-size: 30px;
+    font-family: 'Playfair Display';
+    opacity: .8;
+}
+.skills .section_subtitle
+{
+    font-size: 15px;
+    font-family: cursive;
+    text-align: center;
+    margin-left: 6px;
+}
+.skills__body
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.column__skills
+{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+.skills__contant
+{
+    width: 90%;
+    margin: 25px 15px 0px 0px;
+}
+.skills__contant .skills__header
+{
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.skills__contant .skills__list
+{
+   width: 75%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.skills__contant .skills__header .fa-customize
+{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.skills__contant .skills__header .cursor
+{
+    cursor: pointer;
+    transform: rotate(-180deg);
+}
+.animate_arrow_skills
+{
+    transform: rotate(180deg);
+}
+.skills__contant .skills__header div h1
+{
+    font-size: 20px;
+}
+.skills__contant .skills__header div span
+{
+   font-size: 17px;
+   font-family: cursive;
+}
+
+
+.skills__contant .skills1{float: right;}
+.skills__contant .skills2{float: left;}
+.skills__contant .skills3{float: right;}
+
+.skills__body .skills__contant .skills__list 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills__list .skills__data
+{
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.skills__list .skills__data .skills__title h3
+{
+    float: left;
+    font-size: 17px;
+    margin-left: 15px;
+}
+.skills__list .skills__data .skills__title span
+{
+    float: right;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.skills__list .skills__data .skills__bar
+{
+    height: 5px;
+    background-color: rgb(161 ,161 ,161 , 79%);
+    border-radius: 5px;
+    margin: 0px 15px;
+}
+
+.skills__list .skills__data .skills__bar .skills__percentage
+{
+     height: 100%;
+     display: block;
+     background-color:  var(--color-base);
+}
+.skills__html
+{
+    width: 90%;
+}
+.skills__css
+{
+    width: 80%;
+}
+.skills__js
+{
+    width: 60%;
+}
+.skills__bootstrap
+{
+    width: 70%;
+}
+.skills__jquery
+{
+    width: 85%;
+}
+.skills__php
+{
+    width: 84%;
+}
+.skills__mysql
+{
+    width: 60%;
+}
+.skills__nodejs
+{
+    width: 70%;
+}
+.skills__Photoshop
+{
+    width: 50%;
+}
+.skills__Wireframes
+{
+    width: 95%;
+}
+.skills__c-
+{
+    width: 80%;
+}
+.skills__c_
+{
+    width: 70%;
+}
+.skills__Python
+{
+    width: 95%;
+}
+
+/* ==================
+   End Skills Page
+=====================*/
+
+/* ========================
+   Start footer Page
+=============================*/
+.footer
+{
+    width: 100%;
+    height: 50%;
+    background-color:  var(--background-footer);
+    color: #fff;
+    border-radius: 10px 10px 0px 0xp;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .section_footer_one
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.section_footer_one .title_footer .title
+{
+    font-size: 30px;
+    font-family: 'Playfair Display';
+    opacity: .8;
+}
+.title span
+{
+    font-size: 35px;
+    font-family: cursive;
+    color: #80b435
+}
+.section_footer_one .title_footer .subtitle
+{
+    font-size: 15px;
+    font-family: cursive;
+    opacity: .8;
+}
+.section_footer_one .liked_pages
+{
+    width: 30%;
+}
+.section_footer_one .liked_pages ul
+{
+    list-style: none;
+}
+.section_footer_one .liked_pages ul li
+{
+    display: inline-block;
+    width: 90px;
+}
+.liked_pages ul li a
+{
+    color: #ffff;
+    text-decoration: none;
+}
+.liked_pages ul li a:hover{
+    color: #80b435;
+}
+.section_footer_one .liked_social a .fa-customize
+{ 
+    color: #ffff;
+    margin-right: 10px;
+}
+.section_footer_one .liked_social a .fa-customize:hover
+{
+    color: #80b435;
+}
+.footer .section_footer_two
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 40%;
+}
+.footer .section_footer_two p
+{
+    color: #dadada;
+    opacity: .8;
+}
+.footer .section_footer_two p span
+{
+    color: #80b435;
+    font-size: 25px;
+}
+
+
+/* ========================
+   End footer Page
+=============================*/
+/* ========================
+   start Dark and light theme
+=============================*/
+.dark-theme
+{
+    --background-body:#1a2027;
+    --color-body:#ffff;
+    --color-base: rgb(0 ,123, 255);
+    --background-service:#07072bf0;
+    --background-contactMe:#201c368c;
+    --background-footer:#07072b59;
+}
+.light-theme
+{
+    --background-body:#e3e3e32b;
+    --color-body:rgba(17, 17, 17, 0.932);
+    --color-base:rgb(0 ,123, 255);
+    --background-service:#ffff;
+    --background-contactMe:rgb(0 ,123, 255);
+    --background-footer:rgb(0 ,123, 255);
+}
+
+/* ========================
+   End Dark and light theme
+=============================*/
+/* ========================
+   Start Responsive Design
+=============================*/
+@media screen and (max-width:900px) {
+    .header_row{
+        display: block;
+    }
+    .header{
+        bottom: 0;
+        height: 400px;
+        width: 100% !important;
+    }
+    .header .nav-item ul{
+        flex-direction: column;
+        padding: 0;
+    }
+    .header .nav-item ul #owner{
+        position: relative;
+        left: 0;
+    }
+    .header .nav-item ul li{
+        width: 100%;
+        background-color: #747474;
+        margin: 0px;
+        padding: 7px 5px;
+    }
+    .login{
+        display: flex;
+        justify-content: center;
+    }
+    .login button 
+    {
+        width: 170px;
+        font-size: 22px;
+        height: 55px;
+        border-radius: 15px;
+    }
+    .header .nav-item ul li a{
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        color: white;
+        text-align: center;
+    }
+    .header .nav-item ul li a:hover{
+        background-color: #2ecc71;
+        color: #ffff;
+    }
+    .header .nav-item ul li .fa-moon,
+    .header .nav-item ul li .fa-sun{
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .about .header-about h2{
+        text-align: center;
+    }
+.about .header-about span{
+        display: inline-block;
+        width: 100%;
+    }
+    .about .contain-about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about .contain-about .image-about{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about .contain-about .image-about img{
+        width: 65%;
+        height: 70%;
+    }
+    .discraption-about
+    {
+        padding: 10px 8px;
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:790px) {
+    .skills__body{
+        flex-direction: column;
+    }
+    .column__skills{
+        width: 100%;
+        align-items: center;
+    }
+    .skills__contant{
+        margin: 25px 0px 0px 0px;
+    }
+    .skills__contant .skills__header{
+        width: 90%;
+    }
+    .skills__contant .skills__list{
+        width: 95%;
+    }
+    .footer{
+        height: 260px;
+    }
+    .liked_pages ul li{
+        margin-top: 10px;
+    }
+}
+/* ========================
+   End Responsive Design
+=============================*/
+
+
+
