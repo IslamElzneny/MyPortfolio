@@ -6,29 +6,38 @@
     $(window).on("scroll",function(){
         var scr=$(window).scrollTop(),
             w=$(window).width();
+        // create line in navbar when scroll down
         if(scr>100){
             $(".header").css("border-bottom","2px solid #fff");
         }else{
             $(".header").css("border-bottom","2px solid #2ecc71");
         }
-
-        if(scr>200 && w>920){
-            $(".header").addClass("full_header").removeClass("header");
-        }else{
-            $(".full_header").addClass("header").removeClass("full_header");
-        }
-
+       // decrease width when you scroll down 
+        // if(scr>200 && w>920){
+        //     $(".header").addClass("full_header").removeClass("header");
+        // }else{
+        //     $(".full_header").addClass("header").removeClass("full_header");
+        // }
+        // fade out header when size screen less then 900px and scroll down and show navbar small screen
         if(w<900 && scr>200){
             $(".header").fadeOut(1000);
-        }else{
-            $(".header").fadeIn(1000,function(){$(".header").css("display","block");});
+            $(".navbar_small_screen").css("display","flex");
         }
         
-        if(scr<500){
+        if(scr<700){
             $(".navigation").css("display","none");
         }else{
             $(".navigation").css("display","flex");
-        }
+        } 
+    });
+    $(".navbar_small_screen .fa-customize").click(function(){
+        $(".header").fadeIn(200);
+        $(".navbar_small_screen").fadeOut(50);
+
+    });
+    $(".nav-item ul #owner .fa-customize").click(function(){
+        $(".navbar_small_screen").fadeIn(200);;
+        $(".header").fadeOut(50);
     });
      /* line bottom header */ 
 
@@ -91,4 +100,5 @@
     });
 
  });
+
 
