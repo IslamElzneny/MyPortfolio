@@ -79,7 +79,19 @@ html,body{margin: 0; width: 100%;  height: 100%;}
     font-size: 25px;
     margin-top: 15px;
 }
-#owner span
+ul #owner .fa-customize
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    display: none;
+}
+ul #owner .fa-customize:hover{
+    cursor: pointer;
+    color: #80b435
+}
+#owner span , .navbar_small_screen a span
 {
     font-size: 30px;
     font-family: cursive;
@@ -106,14 +118,43 @@ html,body{margin: 0; width: 100%;  height: 100%;}
     cursor: pointer;
     margin-top: 5px;
 }
-
+.navbar_small_screen
+{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    background-color: #747474;
+    z-index: 999999999999999;
+    height: 50px;
+}
+.navbar_small_screen .fa-customize{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+}
+.navbar_small_screen .fa-customize:hover
+{
+    color: #2ecc71;
+    cursor: pointer;
+}
+.navbar_small_screen a{
+    text-decoration: none;
+    color: #eee;
+}
+.navbar_small_screen a:hover{
+    color: #2ecc71;
+}
 .full_header{
     position:fixed;
     width: 100% !important;
     height: 75px;
     z-index: 99999999999;
     background-color: #ffffff;
-    transition: 5s;
+    transition: 1s;
 }
 /* ==================
    End header
@@ -454,7 +495,7 @@ html,body{margin: 0; width: 100%;  height: 100%;}
 .section_footer_one .liked_pages ul li
 {
     display: inline-block;
-    width: 90px;
+    width: 90px; 
 }
 .liked_pages ul li a
 {
@@ -502,19 +543,15 @@ html,body{margin: 0; width: 100%;  height: 100%;}
 {
     --background-body:#1a2027;
     --color-body:#ffff;
-    --color-base: rgb(0 ,123, 255);
-    --background-service:#07072bf0;
-    --background-contactMe:#201c368c;
+    --color-base: #80b435;
     --background-footer:#07072b59;
 }
 .light-theme
 {
-    --background-body:#e3e3e32b;
+    --background-body:#f5f5f5;
     --color-body:rgba(17, 17, 17, 0.932);
-    --color-base:rgb(0 ,123, 255);
-    --background-service:#ffff;
-    --background-contactMe:rgb(0 ,123, 255);
-    --background-footer:rgb(0 ,123, 255);
+    --color-base:#80b435;
+    --background-footer:#252932;
 }
 
 /* ========================
@@ -524,10 +561,14 @@ html,body{margin: 0; width: 100%;  height: 100%;}
    Start Responsive Design
 =============================*/
 @media screen and (max-width:900px) {
+    .navbar_small_screen{
+        display: flex;
+    }
     .header_row{
         display: block;
     }
     .header{
+        display: none;
         bottom: 0;
         height: 400px;
         width: 100% !important;
@@ -539,6 +580,11 @@ html,body{margin: 0; width: 100%;  height: 100%;}
     .header .nav-item ul #owner{
         position: relative;
         left: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    ul #owner .fa-customize{
+        display: block;
     }
     .header .nav-item ul li{
         width: 100%;
@@ -567,6 +613,9 @@ html,body{margin: 0; width: 100%;  height: 100%;}
     .header .nav-item ul li a:hover{
         background-color: #2ecc71;
         color: #ffff;
+    }
+    .header .nav-item ul #owner a:hover{
+        background-color: #747474;
     }
     .header .nav-item ul li .fa-moon,
     .header .nav-item ul li .fa-sun{
@@ -629,6 +678,3 @@ html,body{margin: 0; width: 100%;  height: 100%;}
 /* ========================
    End Responsive Design
 =============================*/
-
-
-
