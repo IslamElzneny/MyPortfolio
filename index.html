@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/main.css"/>
     <!-- <link rel="stylesheet" href="CSS/responsive-design.css"/> -->
-    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <!-- <link rel="stylesheet" href="CSS/normalize.css"/> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
@@ -16,32 +16,38 @@
         <i class="fas fa-chevron-up fa-customize fa-2x"></i>
     </div>
    <!-- ============ Start header ================   --> 
-<div class="container-fluid">  
+<div class="container-fluid">
+    <div class="row small_screen">
+        <div class="navbar_small_screen" id="small">
+            <a href="#"><span>IS</span>LAM</a> 
+            <i class="fas fa-th fa-customize"></i>
+        </div>
+    </div>  
     <div class="row header_row">
-        <header class="header">
+        <header class="header" id="large">
             <nav class="nav-item">
                 <ul>
                     <li id="owner">
                         <a href="#"><span>IS</span>LAM</a>
+                        <i class="fas fa-times fa-customize"></i>
                     </li>
-                    <li>
+                    <li class="">
                         <a href="#home">Home</a>
                     </li>
-                    <li>
+                    <li class="">
                         <a href="#about">About</a>
                     </li>
-                    <li>
+                    <li class="">
                         <a href="#skills">Skills</a>
                     </li>
-                    <li class="login">
+                    <li class=" login">
                     <button class="btn btn-success my-2 my-sm-0" type="button" style="margin: 5px;" data-toggle="modal" data-target="#staticBackdrop">
                     login</button>
                     </li>
-                    <li>
+                    <li class=" ">
                         <i class="far fa-moon fa-lg fa-moon"></i>
                         <i class="far fa-sun fa-lg fa-sun"></i>
                     </li>
-                    <!-- <li><i class="far fa-times-circle fa-lg fa-customize"></i></li> -->
 
                 </ul>
             </nav> 
