@@ -445,6 +445,272 @@ ul #owner .fa-customize:hover{
    End Skills Page
 =====================*/
 
+
+/* ========================
+   Start qualification Page
+=============================*/
+.qualification
+{
+   width: 100%;
+   height: 100%;
+   min-height: 590px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.qualification .section_title
+{
+    font-size: 30px;
+    font-family: 'Playfair Display';
+    opacity: .8;
+}
+.qualification .section_subtitle
+{
+    font-size: 15px;
+    font-family: cursive;
+    text-align: center;
+    margin-left: 6px;
+}
+.qualification .qualification_container
+{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+.qualification .qualification_container .qualification_tabs
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.qualification_tabs .qualification_buttom
+{
+    margin-right: 25px;
+    font-size: 20px;
+}
+.qualification_tabs #education
+{
+    color:  var(--color-base);
+}
+.qualification_tabs .qualification_buttom:hover
+{
+    color:  var(--color-base);
+    cursor: pointer;
+
+}
+.qualification_section
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;   
+}
+
+.qualification_data
+{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap:1.5rem ;
+}
+.qualification_data .header_data
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.qualification_data .qualification_title
+{
+    font-size: 19px;
+}
+.qualification_data .header_data span,.qualification_calendar
+{
+    margin-right: 20px;
+
+}
+.qualification_data div span,.qualification_calendar
+{
+    font-size: 15px;
+    opacity: 0.7;
+}
+.qualification_rounder
+{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color:  var(--color-base);
+    border-radius: 50%;
+}
+.qualification_line
+{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--color-base);
+    transform: translate(6px,-7px);
+}
+#content2
+{
+    display: none;
+}
+
+
+/* ========================
+   End qualification Page
+=============================*/
+
+/* ========================
+   Start services Page
+=============================*/
+
+.services
+{
+    width: 100%;
+    min-height: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.services .container_services
+{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.services .body_services
+{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    height: 80%;
+}
+.header_services .section_title
+{
+    font-size: 30px;
+    font-family: 'Playfair Display';
+    opacity: .8;
+}
+.header_services .section_subtitle
+{
+    font-size: 15px;
+    font-family: cursive;
+    text-align: center;
+    margin-left: 6px;
+}
+.services .container_services .body_services .content_services
+{
+    width: 25%;
+    margin-right: 10px;
+}
+.services .container_services .body_services .content_services .view_content
+{
+    margin-right: 20px;
+    background-color: var(--background-service);
+    border: 2px solid #e4e4e4a3;
+    border-radius: 15px 40px;
+    padding: 15px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 95%;
+}
+.view_content:hover .fa-customize ,.subtitle_content
+{
+    opacity: 1;
+}
+.view_content:hover .subtitle_content
+{
+    opacity: 1;
+}
+.view_content:hover 
+{
+    box-shadow: 5px 5px 10px #cacaca;
+}
+.view_content .fa-customize ,.subtitle_content
+{
+    color: var(--color-base);
+    opacity: .6;
+}
+.view_content .subtitle_content:hover
+{
+    cursor: pointer;
+    transform: translate(7px);
+}
+.view_content .fa-customize , .title_content, .subtitle_content
+{
+    margin-bottom:25px ;
+}
+.view_content .title_content
+{
+    font-size: 25px;
+    font-family: cursive;
+}
+.services .body_services .content_services .hide_content
+{
+    position: absolute;
+    top: 90px;
+    left: 380px;
+    background-color: var(--background-service);
+    border: 2px solid #e4e4e4a3;
+    padding: 20px;
+    width: 37%;
+    z-index: 99999;
+    display: none;
+    border-radius: 10px;
+}
+.hide_content .header_content
+{
+    display: flex;
+    justify-content: space-between;
+}
+.hide_content .header_content .fa-customize:hover
+{
+    color:  var(--color-base);
+    cursor: pointer;
+}
+.hide_content .skills_content
+{
+    display: flex;
+}
+.skills_content p
+{
+    margin-left: 7px;
+    font-size: 17px;
+}
+
+.hidden_container
+{
+    background-color: #3b3b3b85;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    display: none;
+}
+.header .hidden_container
+{
+    background-color: #ffff;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    z-index: 99;
+    opacity: .1;
+    display: none;
+}
+
+/* ========================
+   End services Page
+=============================*/
+
 /* ========================
    Start footer Page
 =============================*/
@@ -486,7 +752,9 @@ ul #owner .fa-customize:hover{
 }
 .section_footer_one .liked_pages
 {
-    width: 30%;
+    width: 55%;
+    display: flex;
+    justify-content: center;
 }
 .section_footer_one .liked_pages ul
 {
@@ -536,6 +804,7 @@ ul #owner .fa-customize:hover{
 /* ========================
    End footer Page
 =============================*/
+
 /* ========================
    start Dark and light theme
 =============================*/
@@ -668,11 +937,74 @@ ul #owner .fa-customize:hover{
     .skills__contant .skills__list{
         width: 95%;
     }
-    .footer{
-        height: 260px;
-    }
     .liked_pages ul li{
         margin-top: 10px;
+    }
+    .qualification .qualification_container
+    {
+        width: 100%;
+    }
+    .qualification_data
+    {
+        column-gap: 0.4rem;
+    }
+    .footer
+    {
+        min-height: 550px;
+    }
+    .footer .section_footer_one
+    {
+        flex-direction: column;
+    }
+    .footer .section_footer_one .title_footer
+    {
+        width: 100%;
+    }
+    .section_footer_one .title_footer .title
+    {
+        text-align: center;
+    }
+    .section_footer_one .title_footer .subtitle
+    {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    .section_footer_one .liked_pages
+    {
+        width: 100%;
+        padding: 30px 0;
+    }
+    .section_footer_one .liked_pages ul
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .liked_social
+    {
+        margin: 0 auto;
+    }
+    .footer .section_footer_two p
+    {
+        margin-top: 15px;
+    }
+    .services .body_services
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services .container_services .body_services .content_services
+    {
+        width: 95%;
+    }
+    .services .container_services .body_services .content_services
+    {
+        margin-bottom: 30px;
+    }
+    .services
+    {
+        min-height: 1200px;
     }
 }
 /* ========================

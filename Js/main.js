@@ -81,6 +81,19 @@
         $(this).removeClass("animate_arrow_skills");
     });
 
+    /*=============================== qualification page========================= */
+    $("#education").click(function(){
+        $("#content2").css("display","none");
+        $("#content1").css("display","block");
+        $(this).css("color","rgb(0 ,123, 255)");
+        $("#work").css("color","rgb(68 71 74)");
+    });
+    $("#work").click(function(){
+        $("#content1").css("display","none");
+        $("#content2").css("display","block"); 
+        $(this).css("color","rgb(0 ,123, 255)");
+        $("#education").css("color","rgb(68 71 74)");
+    });
      
 
     /* ===================== Dark and light theme ===============================*/
